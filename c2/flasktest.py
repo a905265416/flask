@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/index')
 def index():
     return 'hello'
-#route:路由 加int 给定固定的参数类型
+#route:路由 加int 给定固定的参数
 @app.route('/profile/<int:uid>/')
 def profile(uid):
     return 'profile:' + str(uid)
